@@ -1,0 +1,240 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.videoblock{
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+nav{
+  width: 100%;
+  height: 4vw;
+  background: transparent;
+  position: absolute;
+  font-family: 'Inter';
+  margin-top: 15px;
+  z-index: 10;
+}
+
+.nav_item{
+  position: fixed;
+  display: flex;
+  width: 80%;
+  height: 4vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0vw auto ;
+}
+
+.nav_item > a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.nav_item > a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 50%;
+  margin-left: 20%;
+}
+
+.search_fade_in{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  /* display: none; */
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(2px);
+}
+
+.search_fade_in > input {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 2vw;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+.close_search {
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 5vw;
+  margin-top: 2.5vw;
+  cursor: pointer;
+}
+
+.none{
+  display: none;
+}
+
+.videoblock video {
+  width: 100%;
+}
+
+.categories {
+  display: flex;
+  height: 950px;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+.categories > div {
+  height: 950px;
+  width: 633px;
+  color: white;
+  font-family: 'Inter';
+  letter-spacing: 5px;
+  text-align: center;
+  padding-top: 46%;
+  font-size: 16.5px;
+}
+
+.categ_item > a:hover {
+  text-decoration: underline;
+} 
+
+.costumes {
+  background: url(../source/costumes_cover.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.pants {
+  background: url(../source/pants_cover.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.vest {
+  background: url(../source/vest_cover.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.newitems {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px; /* Место для кнопок */
+}
+
+.scroll-container {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scroll-container > div {
+  width: 360px;
+  height: 540px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background-size: 100%;
+}
+
+/* При активном перетаскивании */
+.scroll-container:active {
+  cursor: grabbing;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  user-select: none;
+}
+
+.scroll-btn--left {
+  left: -10px;
+}
+
+.scroll-btn--right {
+  right: -10px;
+}
+
+.scroll-btn:hover {
+  background: #333;
+  color: white;
+}
+
+.new_item1 {
+  background: url(../source/newgoods/Shele5фев251566.jpg);
+}
+
+.new_item2 {
+  background: url(../source/newgoods/Shele5фев251591.jpg);
+}
+
+.new_item3 {
+  background: url(../source/newgoods/Shele5фев251610.jpg);
+}
+
+.new_item4 {
+  background: url(../source/newgoods/Shele5фев251768.jpg);
+}
+
+.new_item5 {
+  background: url(../source/newgoods/Shele5фев251795.jpg);
+}
+
+.new_item6 {
+  background: url(../source/newgoods/Shele5фев251681.jpg);
+}
+
+.new_item7 {
+  background: url(../source/newgoods/Shele5фев251639.jpg);
+}
+
+.new_item8 {
+  background: url(../source/newgoods/Shele5фев251619.jpg);
+}
+
+.new_item9 {
+  background: url(../source/newgoods/IMG_2834.JPG);
+}
+
+.new_item10 {
+  background: url(../source/newgoods/IMG_2854.JPG);
+}
+
+.new_item11 {
+  background: url(../source/newgoods/IMG_2929.JPG);
+}
+
+.new_item12 {
+  background: url(../source/newgoods/IMG_3091.JPG);
+}
